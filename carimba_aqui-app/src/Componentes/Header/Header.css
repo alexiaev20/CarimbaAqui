@@ -1,0 +1,41 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+    background-color: #0D121E;
+    position: relative;
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    max-width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+  }
+
+/* Estilos específicos para as palavras "Sobre", "Lugares" e "Contatos" */
+.sobre {
+    left: 10px;
+  }
+  
+  .lugares {
+    left: 80px;
+  }
+  
+  .contatos {
+    left: 160px;
+  }

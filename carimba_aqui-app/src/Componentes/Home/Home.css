@@ -1,0 +1,201 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Container principal */
+.home-container {
+  position: relative;
+  background-color: #0D121E;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+}
+
+/* Imagem de fundo */
+.image-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay escuro sobre a imagem */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Container de texto no centro */
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+/* Título principal */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Descrição abaixo do título */
+.description {
+  position: absolute;
+  top: 111%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Container de informações com logo e descrição sobre */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  color: white;
+}
+
+/* Logo */
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  margin-left: 200px;
+  margin-right: auto;
+}
+
+/* Sobre o container */
+.about-container {
+  flex: 2;
+  padding-left: 30%;
+}
+
+/* Título sobre */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #F0B35B;
+}
+
+/* Descrição sobre */
+.about-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Texto centralizado */
+.centered-text {
+  text-align: center;
+  margin: 2px 0;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Destaque de texto */
+.highlight-text {
+  color: #F0B35B;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Subtexto */
+.subtext {
+  font-size: 24px;
+}
+
+/* Container de cards */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 100px 10px; /* Ajuste conforme necessário */
+  box-sizing: border-box;
+}
+
+/* Card individual */
+.card {
+  flex: 0 0 calc(20% - 20px); /* Ajusta a largura dos cards */
+  margin-right: 20px; /* Adiciona espaçamento entre os cards */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Efeito de escala no hover */
+.card:hover {
+  transform: scale(1.1); /* Ajuste conforme necessário */
+}
+
+/* Imagem dentro do card */
+.card img {
+  width: 100%; /* Ajusta a largura da imagem para preencher o card */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Overlay sobre a imagem do card */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Altera a largura do overlay para corresponder à imagem */
+  height: 100%; /* Altera a altura do overlay para corresponder à imagem */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.3); /* Ajuste a transparência conforme necessário */
+}
+
+/* Efeito de opacidade no hover do card */
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Rótulo do card */
+.card-label {
+  color: #F0B35B;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Botão no overlay do card */
+.card-button {
+  background-color: #F0B35B;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
